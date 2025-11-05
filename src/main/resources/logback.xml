@@ -1,0 +1,12 @@
+<configuration>
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+        <root level="INFO">
+        <appender-ref ref="STDOUT" />
+    </root>
+    <!-- 设置特定包或类的日志级别 -->
+<!--    <logger name="top.aion0573.mqtt" level="INFO"/>-->
+</configuration>
